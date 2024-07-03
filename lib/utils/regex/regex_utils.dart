@@ -1,4 +1,4 @@
-import 'package:yx_tools/utils/regex/regex_constants.dart';
+import 'package:yx_fltools/utils/regex/regex_constants.dart';
 
 /// 常见正则表达式工具类
 class RegexUtils {

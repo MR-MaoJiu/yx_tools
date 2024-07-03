@@ -1,4 +1,4 @@
-import 'package:yx_tools/utils/num/rational.dart';
+import 'package:yx_fltools/utils/num/rational.dart';
 
 class Decimal implements Comparable<Decimal> {
   factory Decimal.parse(String value) =>

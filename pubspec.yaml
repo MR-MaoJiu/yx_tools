@@ -1,7 +1,7 @@
-name: yx_tools
+name: yx_fltools
 description: "A new Flutter YXTools."
 version: 0.0.1
-homepage: https://github.com/MR-MaoJiu/yx_tools
+homepage: https://github.com/MR-MaoJiu/yx_fltools
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
