@@ -8,13 +8,12 @@ class ObjectUtils {
   static bool isNullOrBlank(dynamic s) {
     if (isNull(s)) return true;
     switch (s.runtimeType) {
-      case String:
-      case List:
-      case Map:
-      case Set:
-      case Iterable:
+      case String _:
+      case List _:
+      case Map _:
+      case Set _:
+      case Iterable _:
         return s.isEmpty;
-        break;
       default:
         return s.toString() == 'null' || s.toString().trim().isEmpty;
     }

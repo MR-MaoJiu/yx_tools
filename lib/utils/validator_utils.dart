@@ -143,19 +143,19 @@ class ValidatorUtils {
   static bool isLengthLowerThan(dynamic s, int maxLength) {
     if (ObjectUtils.isNull(s)) return (maxLength <= 0) ? true : false;
     switch (s.runtimeType) {
-      case String:
-      case List:
-      case Map:
-      case Set:
-      case Iterable:
+      case String _:
+      case List _:
+      case Map _:
+      case Set _:
+      case Iterable _:
         return s.length < maxLength;
-        break;
-      case int:
+
+      case int _:
         return s.toString().length < maxLength;
-        break;
-      case double:
+
+      case double _:
         return s.toString().replaceAll('.', '').length < maxLength;
-        break;
+
       default:
         return false;
     }
@@ -166,19 +166,18 @@ class ValidatorUtils {
   static bool isLengthGreaterThan(dynamic s, int maxLength) {
     if (ObjectUtils.isNull(s)) return false;
     switch (s.runtimeType) {
-      case String:
-      case List:
-      case Map:
-      case Set:
-      case Iterable:
+      case String _:
+      case List _:
+      case Map _:
+      case Set _:
+      case Iterable _:
         return s.length > maxLength;
-        break;
-      case int:
+
+      case int _:
         return s.toString().length > maxLength;
-        break;
-      case double:
+
+      case double _:
         return s.toString().replaceAll('.', '').length > maxLength;
-        break;
       default:
         return false;
     }
@@ -189,19 +188,19 @@ class ValidatorUtils {
   static bool isLengthGreaterOrEqual(dynamic s, int maxLength) {
     if (ObjectUtils.isNull(s)) return false;
     switch (s.runtimeType) {
-      case String:
-      case List:
-      case Map:
-      case Set:
-      case Iterable:
+      case String _:
+      case List _:
+      case Map _:
+      case Set _:
+      case Iterable _:
         return s.length >= maxLength;
-        break;
-      case int:
+
+      case int _:
         return s.toString().length >= maxLength;
-        break;
-      case double:
+
+      case double _:
         return s.toString().replaceAll('.', '').length >= maxLength;
-        break;
+
       default:
         return false;
     }
@@ -212,17 +211,17 @@ class ValidatorUtils {
   static bool isLengthLowerOrEqual(dynamic s, int maxLength) {
     if (ObjectUtils.isNull(s)) return false;
     switch (s.runtimeType) {
-      case String:
-      case List:
-      case Map:
-      case Set:
-      case Iterable:
+      case String _:
+      case List _:
+      case Map _:
+      case Set _:
+      case Iterable _:
         return s.length <= maxLength;
-        break;
-      case int:
+
+      case int _:
         return s.toString().length <= maxLength;
-        break;
-      case double:
+
+      case double _:
         return s.toString().replaceAll('.', '').length <= maxLength;
       default:
         return false;
@@ -234,19 +233,16 @@ class ValidatorUtils {
   static bool isLengthEqualTo(dynamic s, int maxLength) {
     if (ObjectUtils.isNull(s)) return false;
     switch (s.runtimeType) {
-      case String:
-      case List:
-      case Map:
-      case Set:
-      case Iterable:
+      case String _:
+      case List _:
+      case Map _:
+      case Set _:
+      case Iterable _:
         return s.length == maxLength;
-        break;
-      case int:
+      case int _:
         return s.toString().length == maxLength;
-        break;
-      case double:
+      case double _:
         return s.toString().replaceAll('.', '').length == maxLength;
-        break;
       default:
         return false;
     }

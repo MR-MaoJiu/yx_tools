@@ -50,7 +50,7 @@ class LogUtils {
   }
 
   static void _printLog(String? tag, String stag, Object object) {
-    String da = object.toString() ?? 'null';
+    String da = object.toString();
     if (tag == null || tag.isEmpty) {
       tag = _tagValue;
     }

@@ -44,7 +44,7 @@ class RandomUtils {
   /// Returns true for for all strings that are empty, null or only whitespace.
   /// 对于所有为空、空或只有空格的字符串返回true。
   static bool isWhiteSpaceOrEmptyOrNull(String str) {
-    return removeWhiteSpace(str ?? "").isEmpty;
+    return removeWhiteSpace(str).isEmpty;
   }
 
   /// Extracts decimal numbers from the provided string.

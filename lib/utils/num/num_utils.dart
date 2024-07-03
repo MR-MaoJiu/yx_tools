@@ -9,7 +9,7 @@ class NumUtils {
     if (ObjectUtils.isNull(s)) {
       return false;
     }
-    return num.tryParse(s) is num ?? false;
+    return num.tryParse(s) is num;
   }
 
   /// 将数字字符串转num，数字保留x位小数
@@ -43,7 +43,7 @@ class NumUtils {
 
   /// isZero
   /// 判断是否是否是0
-  static bool isZero(num value) {
+  static bool isZero(num? value) {
     return value == null || value == 0;
   }
 
